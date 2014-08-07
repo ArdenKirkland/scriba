@@ -3,8 +3,19 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+#separate SQL servers for development and production
+group :development do
+	# Use sqlite3 as the database for Active Record
+	gem 'sqlite3'
+end
+group :production do
+	# Added pg so SQLite can talk to PostgreSQL server
+	gem 'pg'
+	# Added rails_12factor for configuration to adhere to 12factor principles
+	gem 'rails_12factor'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -49,3 +60,5 @@ gem 'devise', '~>3.2.4'
 
 # Added gravtastic gem for gravatars with user info
 gem 'gravtastic', '~> 3.2.6'
+
+
