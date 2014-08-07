@@ -46,3 +46,6 @@ gem 'mini_magick', '~> 3.7.0'
 
 # Added devise gem to manage user authentication
 gem 'devise', '~>3.2.4'
+
+# Added gravtastic gem for gravatars with user info
+gem 'gravtastic', '~> 3.2.6'
