@@ -38,5 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# Added carrierwave gem
+# Added carrierwave gem for file uploads
 gem 'carrierwave'
+
+# Added mini-magick gem for image derivatives
+gem 'mini_magick', '~> 3.7.0'
