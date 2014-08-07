@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'pages/about'
+  get 'about', to: 'pages#about'
+  get 'pages/credit'
+  get 'credit', to: 'pages#credit'
+
   resources :transcriptions
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,6 +11,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+
+  # have the root of the site routed with a welcomd page
+    root 'transcriptions#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
