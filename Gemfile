@@ -43,3 +43,6 @@ gem 'carrierwave'
 
 # Added mini-magick gem for image derivatives
 gem 'mini_magick', '~> 3.7.0'
+
+# Added devise gem to manage user authentication
+gem 'devise', '~>3.2.4'
