@@ -8,6 +8,8 @@ gem 'rails', '4.1.4'
 group :development do
 	# Use sqlite3 as the database for Active Record
 	gem 'sqlite3'
+	# use RSpec for testing
+	gem 'rspec-rails', '~> 3.0.0', group: [:development, :test]
 end
 group :production do
 	# Added pg so SQLite can talk to PostgreSQL server
